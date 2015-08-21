@@ -1,23 +1,33 @@
-Sistema Login Completo Demo - Live: https://wp-login-node.herokuapp.com
+Sistema Login Completo
 ===========
 
+Tutorial: https://wp-login-node.herokuapp.com
+----
+
+Live Demo: https://wp-login-node.herokuapp.com
+----
+
 Demo de sistema de login utilizando:
-    * MongoDB v3
-    * Node v12
-    * Express v4
-    * Jade v1
-    * Bootstrap v3
+----
+
+* MongoDB v3
+* Node v12
+* Express v4
+* Jade v1
+* Bootstrap v3
 
 Funcionalidades:
-    * Registrar-se
-    * Entrar
-    * Área Restrita
-    * Sair
+----
+
+* Registrar-se
+* Entrar
+* Área Restrita
+* Sair
 
 Autor
 ----
 
-+ Wanderley Panosso
+* Wanderley Panosso
     * Twitter: https://twitter.com/wanderley_dpj
     * Facebook: https://www.facebook.com/wanderley.panosso.jr
 
@@ -33,9 +43,9 @@ Mais informações
 
 Dependências
 ----
-    * MongoDB rodando em `mongodb://localhost:27017/autenticacao`
+    * MongoDB rodando em "mongodb://localhost:27017/autenticacao"
 
-    * Veja `package.json`
+    * Veja package.json
 
 Instalação do App
 ----
@@ -47,4 +57,4 @@ Instalação do App
 
 Edite a variável `mongoUri` no arquivo app.js para alterar a conexão com o MongoDB.
 
-Inicie o App com 'npm start'
+Inicie o App com `npm start`
