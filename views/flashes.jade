@@ -1,0 +1,8 @@
+if typeof flashes !== 'undefined'
+    .flashes
+        each type in Object.keys(flashes)
+            each flash in flashes[type]
+                .alert(role="alert", class=(type === "success" ? "alert-success" : ((type === "error") || (type === "danger")) ? "alert-danger" : (type === "info" ? "alert-info" : (type === "warning" ? "alert-warning" : ""))) + " fade alert-dismissible")
+                    button.close(type="button", data-dismiss="alert", aria-label="Close")
+                        span(aria-hidden="true") &times;
+                    span #{flash}

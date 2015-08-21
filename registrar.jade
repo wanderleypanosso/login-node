@@ -1,0 +1,34 @@
+extends layout
+
+block content
+    .row
+        .col-md-6.col-md-push-6                        
+            != validations({ errors: errors })
+        .col-md-6.col-md-pull-6
+            form.form-horizontal(action="/usuarios/registrar", method="POST")
+                fieldset
+                    #legend
+                        legend #{title}
+                .control-group
+                    label.control-label(for="nome") Nome
+                    .controls
+                        input#username.form-control(type="text", name="nome", placeholder="Informe o Nome", value=(nome ? nome : ""))
+                        p.help-block 
+                .control-group
+                    label.control-label(for="email") Email
+                    .controls
+                        input#email.form-control(type="email", name="email", placeholder="Informe o Email", value=(email ? email : ""))
+                        p.help-block 
+                .control-group
+                    label.control-label(for="senha") Senha
+                    .controls
+                        input#password.form-control(type="password", name="senha", placeholder="Informe a Senha")
+                        p.help-block 
+                .control-group
+                    label.control-label(for="confirma_senha") Senha (Confirmação)
+                    .controls
+                        input#password_confirm.form-control(type="password", name="confirma_senha", placeholder="Confirmar Senha")
+                        p.help-block 
+                .control-group
+                    .controls
+                        button.btn.btn-success.pull-right Registrar-se
