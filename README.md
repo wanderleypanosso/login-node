@@ -28,6 +28,7 @@ Autor
 ----
 
 * Wanderley Panosso
+    * YouTube: http://tiny.cc/wanderleypanosso
     * Twitter: https://twitter.com/wanderley_dpj
     * Facebook: https://www.facebook.com/wanderley.panosso.jr
 
