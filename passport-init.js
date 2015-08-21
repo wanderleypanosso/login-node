@@ -27,7 +27,7 @@ module.exports = function(passport){
                 if (valido){
                     return done(null, usuario);
                 }else{
-                    return done('Senha incorreta', false);
+                    return done(null, false);
                 }
             });
         });
