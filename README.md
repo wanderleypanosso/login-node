@@ -7,7 +7,7 @@ Tutorial: https://wp-login-node.herokuapp.com
 Live Demo: https://wp-login-node.herokuapp.com
 ----
 
-Demo de sistema de login utilizando:
+Sistema de Login utilizando:
 ----
 
 * MongoDB v3
@@ -52,7 +52,7 @@ Instalação do App
 ----
 
 	git clone https://github.com/wanderleypanosso/login-node.git
-	cd express-template-demo/demo
+	cd login-node
 	npm install
 	npm start
 
