@@ -118,7 +118,10 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = (function(){
-    var connection = mongoose.connect('mongodb://localhost/autenticacao', function(err){
+    if (app.get('env') === 'development') {
+        process.env['MONGOLAB_URI'] = 'mongodb://localhost:27017/autenticacao'
+    }
+    var connection = mongoose.connect(process.env.MONGOLAB_URI, function(err){
         if (err){
             console.warn(err);
             throw err;
