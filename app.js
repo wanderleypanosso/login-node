@@ -18,6 +18,8 @@ var usuarios = require('./routes/usuarios');
 
 var app = express();
 
+var mongoUri = 'mongodb://localhost:27017/autenticacao';
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -119,7 +121,7 @@ app.use(function(err, req, res, next) {
 
 module.exports = (function(){
     if (app.get('env') === 'development') {
-        process.env['MONGOLAB_URI'] = 'mongodb://localhost:27017/autenticacao'
+        process.env['MONGOLAB_URI'] = mongoUri;
     }
     var connection = mongoose.connect(process.env.MONGOLAB_URI, function(err){
         if (err){
